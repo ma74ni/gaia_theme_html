@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-8">
+              <div class="row align-items-center">
+                <div class="col-3">
+                  <a href="/" class="navbar-brand">
+                    <img src="images/logo.png" alt="Logo" />
+                  </a>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col header-search-bar">
+                      <div class="row">
+                        <div class="col-1">
+                          <img
+                            class="header-search-icon"
+                            src="images/icons/icon_prefix.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-11">
+                          <input
+                            class="header-input"
+                            type="text"
+                            placeholder="Buscar aquí..."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-1">
+                      <img
+                        class="header-search-icon search-blue"
+                        src="images/icons/search.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+              <button type="button" class="btn d-flex align-items-center">
+                <img
+                  src="images/icons/shopping_cart.svg"
+                  class="icon-start"
+                  alt=""
+                />
+                Carrito de compras
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="header-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="d-flex justify-content-between w-100">
+              <div class="d-flex">
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                      <a class="nav-link d-flex align-items-center" href="#">
+                        <img src="images/icons/menu.svg" alt="" />
+                        Menú
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Días lluviosos</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Regreso a clases</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Estilo de vida</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Vida fit</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Tecnología</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="images/icons/account_circle.svg"
+                        class="icon-start"
+                        alt=""
+                      />
+                      Usuario
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Salir</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="images/icons/inventory.svg"
+                        class="icon-start"
+                        alt=""
+                      />
+                      Mis pedidos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slides/first.jpg" class="d-block w-100" alt="" />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="images/slides/second.jpg"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselBanner"
+            data-bs-slide="prev"
+          >
+            <img src="images/icons/navigate_before.svg" alt="" />
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselBanner"
+            data-bs-slide="next"
+          >
+            <img src="images/icons/navigate_next.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <section id="recommended-products" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Productos recomendados</h3>
+            <a href="#" class="prod-readmore">Ver más</a>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/1.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/2.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">60.000 puntos</div>
+                    <div class="name">Licuadora Oster</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/3.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Reloj Stührling Original</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/4.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Reloj Stührling Original</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/5.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Reloj Stührling Original</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card h-100">
+                <a href="#" class="stretched-link">
+                  <img class="img-fluid" src="images/recomended/6.jpg" alt="" />
+                </a>
+                <div class="card-body">
+                  <div class="text-center">
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Reloj Stührling Original</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="category-products" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Consiente a tus mascotas</h3>
+            <a href="#" class="prod-readmore">Ver más</a>
+          </div>
+          <div class="row">
+            <div class="col-6 category-banner">
+              <div class="card h-100">
+                <img src="images/category/main.jpg" alt="" />
+                <div class="card-body">
+                  <h4>Productos recomendados para tus mascotas</h4>
+                  <p>Comida, juguetes, accesorios y más</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row h-100">
+                <div class="col-4 mb-3">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/1.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-3">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/2.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mb-3">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/3.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/4.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/5.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card h-100">
+                    <a href="#" class="stretched-link">
+                      <img
+                        class="img-fluid"
+                        src="images/category/6.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">Reloj Stührling Original</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tech-products" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Tecnología para ti</h3>
+            <a href="#" class="prod-readmore">Ver más</a>
+          </div>
+          <div class="row justify-content-between">
+            <div
+              id="carouselProducts"
+              class="carousel slide carousel-6 custom-carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/1.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/2.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/3.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/4.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/5.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/6.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-2">
+                    <div class="card h-100">
+                      <a href="#">
+                        <img src="images/tech/3.jpg" alt="" class="img-fluid" />
+                      </a>
+                      <div class="card-body">
+                        <div class="text-center">
+                          <div class="points">120.000 puntos</div>
+                          <div class="name">Teléfono móvil Infinix FHD+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProducts"
+                data-bs-slide="prev"
+              >
+                <img src="images/icons/navigate_before_black.svg" alt="" />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProducts"
+                data-bs-slide="next"
+              >
+                <img src="images/icons/navigate_next_black.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <img src="images/banners/1st.jpg" alt="" class="img-fluid" />
+      </section>
+      <section id="life-style" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Estilo de vida</h3>
+            <a href="#" class="prod-readmore">Ver más</a>
+          </div>
+          <div class="row justify-content-between">
+            <div
+              id="carouselLifeStyle"
+              class="carousel slide carousel-3 custom-carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="custom-item col-md-4">
+                    <div class="card">
+                      <div class="wrap-img"></div>
+                      <img
+                        src="images/lifestyle/1.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">
+                          Parrilla con ruedas más accesorios
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-4">
+                    <div class="card">
+                      <div class="wrap-img"></div>
+                      <img
+                        src="images/lifestyle/2.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">
+                          Parrilla con ruedas más accesorios
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-4">
+                    <div class="card">
+                      <div class="wrap-img"></div>
+                      <img
+                        src="images/lifestyle/3.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">
+                          Parrilla con ruedas más accesorios
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-4">
+                    <div class="card">
+                      <div class="wrap-img"></div>
+                      <img
+                        src="images/lifestyle/2.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">
+                          Parrilla con ruedas más accesorios
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="custom-item col-md-4">
+                    <div class="card">
+                      <div class="wrap-img"></div>
+                      <img
+                        src="images/lifestyle/3.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="card-body">
+                        <div class="points">120.000 puntos</div>
+                        <div class="name">
+                          Parrilla con ruedas más accesorios
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselLifeStyle"
+                data-bs-slide="prev"
+              >
+                <img src="images/icons/navigate_before_black.svg" alt="" />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselLifeStyle"
+                data-bs-slide="next"
+              >
+                <img src="images/icons/navigate_next_black.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="other-category" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Arma tu cocina</h3>
+            <a href="#" class="prod-readmore">Ver todas las tiendas</a>
+          </div>
+          <div class="row content-main align-items-center">
+            <div class="col-md-4 ps-0">
+              <div class="content-img">
+                <div class="wrap-img"></div>
+                <img
+                  src="images/other-category/main.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div
+                  id="carouselOtherCategory"
+                  class="carousel slide carousel-4 custom-carousel"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/1.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Sartén Rausch</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/2.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Mezcladora Oster</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/3.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Exprimidor de jugos Oster</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/4.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Olla con agarradera Rausch</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/3.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Olla con agarradera Rausch</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/2.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Olla con agarradera Rausch</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="custom-item col-md-3">
+                        <div class="card h-100">
+                          <a href="#">
+                            <img
+                              src="images/other-category/4.jpg"
+                              alt=""
+                              class="img-fluid"
+                            />
+                          </a>
+                          <div class="card-body">
+                            <div class="text-center">
+                              <div class="points">120.000 puntos</div>
+                              <div class="name">Olla con agarradera Rausch</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselOtherCategory"
+                    data-bs-slide="prev"
+                  >
+                    <img src="images/icons/navigate_before_black.svg" alt="" />
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselOtherCategory"
+                    data-bs-slide="next"
+                  >
+                    <img src="images/icons/navigate_next_black.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="all-campaigns" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Todas las campañas</h3>
+            <a href="#" class="prod-readmore">Ver más</a>
+          </div>
+          <div class="row">
+            <div
+              id="carouselAllCampaigns"
+              class="carousel slide carousel-4 custom-carousel"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-3 custom-item">
+                    <div class="card content-card">
+                      <div class="wrap-img">
+                        <img
+                          src="images/all-campaigns/home/main.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <div class="name">Cocina y Hogar</div>
+                        <div class="row justify-content-center">
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/1.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/2.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/3.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3 custom-item">
+                    <div class="card content-card">
+                      <div class="wrap-img">
+                        <img
+                          src="images/all-campaigns/home/main.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <div class="name">Cocina y Hogar</div>
+                        <div class="row justify-content-center">
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/1.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/2.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/3.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3 custom-item">
+                    <div class="card content-card">
+                      <div class="wrap-img">
+                        <img
+                          src="images/all-campaigns/home/main.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <div class="name">Cocina y Hogar</div>
+                        <div class="row justify-content-center">
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/1.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/2.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/3.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3 custom-item">
+                    <div class="card content-card">
+                      <div class="wrap-img">
+                        <img
+                          src="images/all-campaigns/home/main.jpg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="card-body">
+                        <div class="name">Cocina y Hogar</div>
+                        <div class="row justify-content-center">
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/1.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/2.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-2">
+                            <div class="card">
+                              <img
+                                src="images/all-campaigns/home/3.jpg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                              <div class="card-body">
+                                <div class="points">
+                                  <a href="" class="stretched-link"
+                                    >15.000 puntos</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselAllCampaigns"
+                data-bs-slide="prev"
+              >
+                <img src="images/icons/navigate_before_black.svg" alt="" />
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselAllCampaigns"
+                data-bs-slide="next"
+              >
+                <img src="images/icons/navigate_next_black.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="all-categories" class="section">
+        <div class="container">
+          <div class="d-flex align-items-center title-section">
+            <h3>Todas las categorías</h3>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-2 mb-3 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/computer.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Computadoras</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/home_max.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Smarth home</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/tools.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Herramientas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/pets.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Mascotas</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/toys.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Juguetes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/home.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Hogar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <div class="card text-center h-100">
+                <div class="wrapp-image">
+                  <img
+                    src="images/categories/home.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <a href="/prod01" class="name stretched-link">Otro</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="divider"></div>
+      <div class="container">
+        <div class="row secondary-menu justify-content-between">
+          <div class="col-md-2">
+            <div class="block-menu-footer">
+              <p>Ayuda</p>
+              <ul>
+                <li><a href="">Cómo acumular puntos</a></li>
+                <li><a href="">Cómo canjear productos</a></li>
+                <li><a href="">Seguimiento de pedidos</a></li>
+                <li><a href="">Resolución de problemas</a></li>
+                <li><a href="">Centro de seguridad</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="block-menu-footer">
+              <p>Mi cuenta</p>
+              <ul>
+                <li><a href="">Ingresar</a></li>
+                <li><a href="">Mis pedidos</a></li>
+                <li><a href="">Carrito de compras</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="block-menu-footer">
+              <p>Recomendados</p>
+              <ul>
+                <li><a href="">Días lluviosos</a></li>
+                <li><a href="">Regreso a clases</a></li>
+                <li><a href="">Estilos de vida</a></li>
+                <li><a href="">Vida fit</a></li>
+                <li><a href="">Tecnología</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="block-menu-footer">
+              <p>Los más vendidos</p>
+              <ul>
+                <li><a href="">Smart home</a></li>
+                <li><a href="">Mascotas</a></li>
+                <li><a href="">Hogar</a></li>
+                <li><a href="">Fitness</a></li>
+                <li><a href="">Todas las categorías</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="d-flex flex-column">
+              <div class="mx-3"></div>
+              <a href="/">
+                <img src="images/logo_footer.svg" alt="" class="img-fluid" />
+              </a>
+              <div class="d-flex justify-content-around social">
+                <div>
+                  <a href=""><img src="images/icons/facebook.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/icons/instagram.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/icons/youtube.svg" alt="" /></a>
+                </div>
+                <div>
+                  <a href=""><img src="images/icons/tiktok.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="row menu-footer">
+        <div class="d-flex gap-3 justify-content-center">
+          <div class="content-item">
+            <a href="">Términos y condiciones del servicio</a>
+          </div>
+          <div class="content-item">
+            <a href="">Términos y condiciones del programa</a>
+          </div>
+          <div class="content-item">
+            <a href="">Política de privacidad</a>
+          </div>
+          <div class="content-item">
+            <a href="">Accesibilidad</a>
+          </div>
+          <div class="content-item">
+            <a href="">Centro de ayuda</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="copyright">Copyright 2022 Mingle. Derechos Reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
