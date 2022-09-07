@@ -614,3 +614,8 @@ label {
     brightness(109%) contrast(102%); /* #0D6EFD; */
 }
 /* ---end search input --- */
+
+.outline-none {
+  border: none;
+  background: transparent;
+}
