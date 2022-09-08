@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  /*  --- Carrousel --- */
   const itemsProducts = document.querySelectorAll(
     '#carouselProducts.carousel .carousel-item'
   );
@@ -30,33 +31,36 @@ $(document).ready(function () {
       }
     });
   }
-  function showNavbar(toggleId, navId, coverId) {
+  /*  --- End Carrousel --- */
+  function showNavbar(toggleId, navId, coverId, side) {
     const toggle = document.getElementById(toggleId),
       nav = document.getElementById(navId),
       cover = document.getElementById(coverId);
 
     // Validate that all variables exist
-    if (toggle && nav) {
+    if (toggle && nav && side) {
       $(toggle).on('click', () => {
         // show navbar
-        nav.classList.toggle('show');
+        nav.classList.toggle('show-' + side);
         cover.classList.toggle('active');
       });
     }
   }
-  function closeNavbar(navId, coverId, btnId) {
+  function closeNavbar(navId, coverId, btnId, side) {
     const nav = document.getElementById(navId),
       cover = document.getElementById(coverId);
-    if ((navId, coverId, btnId)) {
+    if (navId && coverId && btnId && side) {
       $(btnId).on('click', () => {
-        nav.classList.toggle('show');
+        nav.classList.toggle('show-' + side);
         cover.classList.toggle('active');
       });
     }
   }
-  showNavbar('header-toggle', 'nav-bar', 'cover');
-  closeNavbar('nav-bar', 'cover', '#navbarClose');
-  closeNavbar('nav-bar', 'cover', '#cover');
+  showNavbar('header-toggle', 'nav-bar', 'cover', 'left');
+  closeNavbar('nav-bar', 'cover', '#navbarClose', 'left');
+
+  showNavbar('cart-toggle', 'cart-bar', 'cover', 'right');
+  closeNavbar('cart-bar', 'cover', '#cartbarClose', 'right');
 
   //inputs
   $('.custom-input-group input')

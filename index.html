@@ -62,7 +62,11 @@
               </div>
             </div>
             <div class="col-4 d-flex justify-content-end">
-              <button type="button" class="btn d-flex align-items-center">
+              <button
+                type="button"
+                class="btn d-flex align-items-center"
+                id="cart-toggle"
+              >
                 <img
                   src="images/icons/shopping_cart.svg"
                   class="icon-start"
@@ -387,7 +391,7 @@
         </div>
       </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
+    <div class="l-navbar sidebar" id="nav-bar">
       <div class="d-flex justify-content-between">
         <div class="content-l-navbar">
           <div class="content-login d-grid">
@@ -430,9 +434,90 @@
           </div>
         </div>
         <div class="navbar-btn-close">
-          <button type="button" class="btn" id="navbarClose">
+          <button type="button" class="outline-none" id="navbarClose">
             <img src="images/icons/close.svg" alt="" />
           </button>
+        </div>
+      </div>
+    </div>
+    <div class="r-navbar sidebar" id="cart-bar">
+      <div class="d-flex justify-content-between">
+        <div class="navbar-btn-close">
+          <button type="button" class="outline-none" id="cartbarClose">
+            <img src="images/icons/close.svg" alt="" />
+          </button>
+        </div>
+        <div class="content-r-navbar">
+          <div
+            class="d-flex justify-content-between align-items-center title-cartbar"
+          >
+            Tu Carrito de compras
+            <!-- agregar clase active para mostrar el ícono-->
+            <div class="cart-icon position-relative active">
+              <img src="images/icons/inner_shopping_cart.svg" alt="" />
+              <span
+                class="badge position-absolute top-0 start-100 translate-middle p-2 border border-light rounded-circle"
+              >
+                1
+              </span>
+            </div>
+          </div>
+          <!-- divider no se muestra si el carrito está vacío -->
+          <div class="divider"></div>
+          <div class="content-cart-items">
+            <!-- carrito vacío -->
+            <div
+              class="empty-cart d-flex flex-column align-items-center text-justify d-none"
+            >
+              <button type="button" class="btn">
+                <img src="images/icons/add_shopping_cart.svg" alt="" />
+              </button>
+              <p>
+                Aún no tienes productos en tu carrito, te recomendamos algunos
+                productos que pueden ser de tu interés.
+              </p>
+              <div class="content-login d-grid">
+                <button type="button" class="btn btn-primary btn-block">
+                  Ver productos recomendados
+                </button>
+              </div>
+            </div>
+            <!-- fin carrito vacío -->
+            <!-- carrito lleno -->
+            <div class="full-cart">
+              <div class="group-cart-item">
+                <div class="cart-item">
+                  <div class="actions d-flex justify-content-end">
+                    <button class="btn">
+                      <img src="images/icons/edit.svg" alt="" />
+                    </button>
+                    <button class="btn">
+                      <img src="images/icons/delete.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="cart-card d-flex">
+                    <img src="images/cart/default.jpg" alt="" />
+                    <div class="item-info">
+                      <div class="name">Reloj Stührling Original</div>
+                      <div class="category">Relojes/hombre</div>
+                      <div class="cost">120.000 puntos</div>
+                      <div class="attribute">Color: Plata</div>
+                    </div>
+                  </div>
+                  <div class="quantity d-flex justify-content-end">
+                    <div class="counter">
+                      <div class="label">Cantidad</div>
+                      <button type="button" class="btn-counter">-</button>
+                      <input type="text" />
+                      <button type="button" class="btn-counter">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-cart"></div>
+            </div>
+            <!-- fin carrito lleno -->
+          </div>
         </div>
       </div>
     </div>
@@ -479,9 +564,15 @@
             <!--aquí-->
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/1.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/1.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
                     <div class="points">120.000 puntos</div>
@@ -493,65 +584,95 @@
             <!--acá-->
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/2.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/2.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
-                    <div class="points">60.000 puntos</div>
-                    <div class="name">Licuadora Oster</div>
+                    <div class="points">120.000 puntos</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/3.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/3.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
                     <div class="points">120.000 puntos</div>
-                    <div class="name">Reloj Stührling Original</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/4.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/4.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
                     <div class="points">120.000 puntos</div>
-                    <div class="name">Reloj Stührling Original</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/5.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/5.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
                     <div class="points">120.000 puntos</div>
-                    <div class="name">Reloj Stührling Original</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-2">
               <div class="card h-100">
-                <a href="#" class="stretched-link">
-                  <img class="img-fluid" src="images/recomended/6.jpg" alt="" />
-                </a>
+                <div class="d-flex flex-column justify-content-center">
+                  <a href="#" class="stretched-link">
+                    <img
+                      class="card-img-top"
+                      src="images/recomended/6.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
                 <div class="card-body">
                   <div class="text-center">
                     <div class="points">120.000 puntos</div>
-                    <div class="name">Reloj Stührling Original</div>
+                    <div class="name">Teléfono móvil Infinix FHD+</div>
                   </div>
                 </div>
               </div>

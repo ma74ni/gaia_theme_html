@@ -11,7 +11,11 @@ a {
   color: var(--bs-blue);
   text-decoration: none;
 }
-
+.card-img-top {
+  width: 100%;
+  height: 191px;
+  object-fit: contain;
+}
 .header-top {
   padding: 2px 0 0;
 }
@@ -55,8 +59,9 @@ a {
   border-radius: 4px;
 }
 .card-body {
-  padding: 12px 14px 30px;
+  padding: 12px 8px 24px;
 }
+
 .section h3 {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
@@ -308,27 +313,38 @@ footer .copyright {
   margin: 0;
 }
 /* --- sidebar menu --- */
-
-.l-navbar {
+.sidebar {
   position: fixed;
   top: 0;
   width: 413px;
   height: 100vh;
   transition: 0.5s;
   z-index: 9999;
-  left: -415px;
   background-color: none;
 }
+.l-navbar {
+  left: -415px;
+}
+.r-navbar {
+  right: -415px;
+}
 .content-l-navbar {
+  padding: 12px 15px;
+}
+.content-l-navbar,
+.content-r-navbar {
   background-color: #fff;
   height: 100%;
   width: 365px;
-  padding: 12px 15px;
+
   min-height: 100vh;
 }
 
-.show {
+.show-left {
   left: 0;
+}
+.show-right {
+  right: 0;
 }
 #cover {
   display: none;
@@ -615,6 +631,84 @@ label {
 }
 /* ---end search input --- */
 
+/* --- cart bar --- */
+.title-cartbar {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  padding: 12px 12px 24px 24px;
+}
+.title-cartbar .badge {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 4px;
+  background-color: #ffba07;
+  color: #332501;
+}
+.cart-icon {
+  display: none;
+}
+.cart-icon.active {
+  display: block;
+}
+.empty-cart {
+  padding: 0 24px;
+}
+.empty-cart p {
+  margin: 24px 0;
+}
+.full-cart {
+  padding: 12px 0;
+}
+.group-cart-item {
+  padding: 12px 0;
+}
+.cart-item {
+  padding: 0 8px;
+  margin-bottom: 12px;
+}
+.actions .btn {
+  padding: 0 12px 0 0;
+}
+.actions .btn:last-child {
+  padding: 0;
+}
+.cart-card .item-info {
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid #dee1e5;
+}
+.cart-card .item-info .name,
+.cart-card .item-info .cost {
+  color: #0d6efd;
+  font-family: 'Roboto', sans-serif;
+}
+.cart-card .item-info .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cart-card .item-info .category,
+.cart-card .item-info .attribute {
+  color: #232426;
+  font-family: 'Montserrat', sans-serif;
+}
+.cart-card .item-info .category {
+  font-size: 14px;
+  font-weight: 300;
+}
+.cart-card .item-info .attribute {
+  font-size: 12px;
+}
+.cart-card .item-info .cost {
+  font-size: 18px;
+  font-weight: 600;
+}
+/* --- end cart bar --- */
+
+/* --- custom counter input --- */
+.counter {
+}
+/* --- end custom counter input --- */
 .outline-none {
   border: none;
   background: transparent;
