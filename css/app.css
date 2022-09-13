@@ -16,6 +16,12 @@ a {
   height: 191px;
   object-fit: contain;
 }
+.category-banner {
+  max-height: 666px;
+}
+.default-card {
+  min-height: 321px;
+}
 .header-top {
   padding: 2px 0 0;
 }
@@ -90,6 +96,9 @@ a {
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+}
+#category-products .default-card {
+  margin-bottom: 24px;
 }
 /*---Carousel Multiple Items---*/
 #carouselProducts {
@@ -769,3 +778,9 @@ label {
   border: none;
   background: transparent;
 }
+/* --- custom col 7 --- */
+.col-custom-7 {
+  flex: 0 0 auto;
+  width: 14.2857143%;
+}
+/* --- end custom col 7 --- */
