@@ -64,8 +64,10 @@
             <div class="col-4 d-flex justify-content-end">
               <button
                 type="button"
-                class="btn d-flex align-items-center"
-                id="cart-toggle"
+                class="btn d-flex align-items-center outline-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
               >
                 <img
                   src="images/icons/shopping_cart.svg"
@@ -91,9 +93,11 @@
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li>
                       <a
-                        class="nav-link d-flex align-items-center header_toggle"
-                        id="header-toggle"
-                        href="#"
+                        class="nav-link d-flex align-items-center"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasMenu"
+                        role="button"
+                        aria-controls="offcanvasMenu"
                       >
                         <img src="images/icons/menu.svg" alt="" />
                         Menú
@@ -391,7 +395,12 @@
         </div>
       </div>
     </header>
-    <div class="l-navbar sidebar" id="nav-bar">
+    <div
+      class="l-navbar sidebar offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasMenu"
+      aria-labelledby="offcanvasMenuLabel"
+    >
       <div class="d-flex justify-content-between">
         <div class="content-l-navbar">
           <div class="content-login d-grid">
@@ -399,7 +408,7 @@
               Ingresar ahora
             </button>
           </div>
-          <div>
+          <div class="offcanvas-body">
             <div class="nav-group">
               <p>TENDENCIAS</p>
               <ul>
@@ -434,22 +443,37 @@
           </div>
         </div>
         <div class="navbar-btn-close">
-          <button type="button" class="outline-none" id="navbarClose">
+          <button
+            type="button"
+            class="outline-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
             <img src="images/icons/close.svg" alt="" />
           </button>
         </div>
       </div>
     </div>
-    <div class="r-navbar sidebar" id="cart-bar">
+    <div
+      class="r-navbar sidebar offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
       <div class="d-flex justify-content-between">
         <div class="navbar-btn-close">
-          <button type="button" class="outline-none" id="cartbarClose">
+          <button
+            type="button"
+            class="outline-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
             <img src="images/icons/close.svg" alt="" />
           </button>
         </div>
         <div class="content-r-navbar">
           <div
-            class="d-flex justify-content-between align-items-center title-cartbar"
+            class="d-flex justify-content-between align-items-center title-cartbar offcanvas-header"
           >
             Tu Carrito de compras
             <!-- agregar clase active para mostrar el ícono-->
@@ -464,7 +488,7 @@
           </div>
           <!-- divider no se muestra si el carrito está vacío -->
           <div class="divider"></div>
-          <div class="content-cart-items">
+          <div class="content-cart-items offcanvas-body">
             <!-- carrito vacío -->
             <div
               class="empty-cart d-flex flex-column align-items-center text-justify d-none"

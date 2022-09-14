@@ -320,7 +320,7 @@ footer .copyright {
   margin: 0;
 }
 /* --- sidebar menu --- */
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 0;
   width: 413px;
@@ -334,6 +334,13 @@ footer .copyright {
 }
 .r-navbar {
   right: -415px;
+} */
+
+.offcanvas.offcanvas-start {
+  border: none;
+}
+.sidebar {
+  background-color: transparent;
 }
 .content-l-navbar {
   padding: 12px 15px;
