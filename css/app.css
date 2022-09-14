@@ -19,9 +19,7 @@ a {
 .category-banner {
   max-height: 666px;
 }
-.default-card {
-  min-height: 321px;
-}
+
 .header-top {
   padding: 2px 0 0;
 }
@@ -784,3 +782,71 @@ label {
   width: 14.2857143%;
 }
 /* --- end custom col 7 --- */
+
+/* --- carousel swiperjs*/
+.swiper {
+  width: 100%;
+  height: 336px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.default-card {
+  min-height: 321px;
+  max-height: 330px;
+  height: 100%;
+}
+.carousel-next,
+.carousel-prev {
+  background: #f9f9f9;
+  opacity: 1;
+  width: 32px;
+  height: 64px;
+  top: 38%;
+}
+.carousel-next {
+  border-radius: 4px 0 0 4px;
+  box-shadow: -3px 1px 3px 0px rgb(0 0 0 / 15%);
+}
+.carousel-prev {
+  left: 5px;
+  border-radius: 0px 4px 4px 0px;
+  box-shadow: 3px 1px 3px 0px rgb(0 0 0 / 15%);
+}
+.carousel-next,
+.carousel-prev {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  border: 0;
+  transition: opacity 0.15s ease;
+}
+.carousel-next {
+  right: 0;
+}
+.carousel-prev {
+  left: 0;
+}
+/* --- end carousel swiperjs*/

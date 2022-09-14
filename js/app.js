@@ -80,4 +80,18 @@ $(document).ready(function () {
       : currentInput.prop('type', 'password');
   });
   $('.content-input-group.verified').addClass('selected');
+  /* --- new carousel --- */
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    rewind: true,
+    navigation: {
+      nextEl: '.carousel-next',
+      prevEl: '.carousel-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+  /**/
 });
