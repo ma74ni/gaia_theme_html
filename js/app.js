@@ -18,8 +18,20 @@ $(document).ready(function () {
   });
   $('.content-input-group.verified').addClass('selected');
   /* --- new carousel --- */
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper('.carouselTypeOne', {
     slidesPerView: 6,
+    spaceBetween: 30,
+    rewind: true,
+    navigation: {
+      nextEl: '.carousel-next',
+      prevEl: '.carousel-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
+  var swiper_two = new Swiper('.carouselTypeTwo', {
+    slidesPerView: 3,
     spaceBetween: 30,
     rewind: true,
     navigation: {
