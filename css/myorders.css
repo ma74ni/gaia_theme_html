@@ -1,0 +1,17 @@
+/* --- breadcrumb --- */
+.breadcrumb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #8a9197;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #0d6efd;
+}
+/* --- end breadcrumb --- */
+.title-page {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
