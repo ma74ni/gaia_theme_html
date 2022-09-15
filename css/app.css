@@ -871,10 +871,19 @@ label {
   margin: 0;
 }
 #all-campaigns .swiper {
-  height: 306px;
+  height: 315px;
 }
 .carouselTypeFour {
   padding: 0 0 5px 0;
+}
+.see-products {
+  margin-top: 26px;
+  margin-bottom: 6px;
+}
+.see-products a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 /* --- end carouselTypeFour --- */
 /* --- end carousel swiperjs*/
