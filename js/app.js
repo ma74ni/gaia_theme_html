@@ -54,5 +54,17 @@ $(document).ready(function () {
       delay: 5000,
     },
   });
+  var swiper_three = new Swiper('.carouselTypeFour', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    rewind: true,
+    navigation: {
+      nextEl: '.carousel-next',
+      prevEl: '.carousel-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+  });
   /**/
 });
