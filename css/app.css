@@ -189,31 +189,7 @@ a {
 }
 
 /*---End Carousel Multiple Items---*/
-#carouselLifeStyle .card {
-  position: relative;
-}
-#carouselLifeStyle .card .wrap-img {
-  background: linear-gradient(180deg, rgba(3, 22, 51, 0) 0%, #031633 100%);
-  background-blend-mode: darken;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-#carouselLifeStyle .card .wrap-img img {
-  position: absolute;
-}
-#carouselLifeStyle .card .card-body {
-  position: absolute;
-  bottom: 0;
-  padding: 0 12px 12px;
-}
-#carouselLifeStyle .card .card-body .points,
-#carouselLifeStyle .card .card-body .name {
-  color: #ffffff;
-}
-#carouselLifeStyle .card .card-body .points {
-  margin: 0;
-}
+
 #all-categories .card .wrapp-image {
   padding: 0 15px 20px;
 }
@@ -268,25 +244,6 @@ footer .copyright {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   margin-bottom: 12px;
-}
-#other-category .wrap-img {
-  background: linear-gradient(
-    90deg,
-    rgba(13, 110, 253, 0) 74.04%,
-    #0d6efd 92.88%
-  );
-  background-blend-mode: darken;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-#other-category .content-img {
-  position: relative;
-}
-#other-category .content-main {
-  background-color: #0d6efd;
-  margin: 0;
 }
 #all-campaigns .card {
   border-radius: 4px;
@@ -843,4 +800,73 @@ label {
 .carousel-prev {
   left: 0;
 }
+/* --- carouselTypeTwo --- */
+
+.carouselTypeTwo .card .wrap-img {
+  background: linear-gradient(180deg, rgba(3, 22, 51, 0) 0%, #031633 100%);
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.carouselTypeTwo .card {
+  height: 320px;
+}
+.carouselTypeTwo .card-img {
+  height: 100%;
+}
+.carouselTypeTwo .name,
+.carouselTypeTwo .points {
+  color: #ffffff;
+}
+.carouselTypeTwo .card-body {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+}
+.carouselTypeTwo .card .card-body .points {
+  margin: 0;
+}
+.swiper-button-lock {
+  display: none;
+}
+/* --- end carouselTypeTwo --- */
+/* --- carouselTypeThree --- */
+#other-category .wrap-img {
+  background: linear-gradient(
+    90deg,
+    rgba(13, 110, 253, 0) 74.04%,
+    #0d6efd 92.88%
+  );
+  background-blend-mode: darken;
+  height: 100%;
+}
+#other-category .content-img {
+  position: relative;
+}
+#other-category .content-main {
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 27px 0;
+}
+#other-category .content-swiper {
+  background-color: #0d6efd;
+  padding: 27px 21px 27px 10px;
+}
+#other-category .card {
+  min-height: 307px;
+  height: 307px;
+  max-height: 307px;
+}
+#other-category .swiper {
+  height: auto;
+}
+.image-category {
+  height: 361px;
+  padding-right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* --- end carouselTypeThree --- */
 /* --- end carousel swiperjs*/
