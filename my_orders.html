@@ -640,6 +640,330 @@
             </ol>
           </nav>
           <h2 class="title-page">Mis pedidos</h2>
+          <div class="d-flex align-items-center content-filter">
+            <div class="content-datapicker me-3">
+              <img src="images/borrar/datepicker-light.jpg" alt="" />
+            </div>
+            <div class="content-pills">
+              <ul
+                class="nav nav-pills custom-pills-tab gap-2"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-inprogress"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-inprogress"
+                    aria-selected="false"
+                    disabled
+                  >
+                    En curso
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-delivered"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-delivered"
+                    aria-selected="false"
+                  >
+                    Entregados
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade"
+              id="pills-inprogress"
+              role="tabpanel"
+              aria-labelledby="pills-inprogress-tab"
+              tabindex="0"
+            >
+              En progreso
+            </div>
+            <div
+              class="tab-pane fade show active"
+              id="pills-delivered"
+              role="tabpanel"
+              aria-labelledby="pills-delivered-tab"
+              tabindex="0"
+              show
+              active
+            >
+              <div class="detail-content">
+                <!-- aquí -->
+                <div class="row detail-content-item">
+                  <div class="col-12 content-header">
+                    <div class="row align-items-center">
+                      <div class="col-7">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="col title-header">
+                            <h6>Pedido realizado</h6>
+                            <p>xx de xxxxxmbre de xxxx</p>
+                          </div>
+                          <div class="col-1 title-header">
+                            <h6>Puntos</h6>
+                            <p>120.012</p>
+                          </div>
+                          <div class="col title-header">
+                            <h6>Envío a</h6>
+                            <p>Dirección con detalle de todo</p>
+                          </div>
+                          <div class="col-3 title-header">
+                            <h6>Recibido por</h6>
+                            <p>Nombre y apellido</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 detail-links">
+                        <div
+                          class="d-flex justify-content-end align-items-center"
+                        >
+                          <div class="title-header">
+                            <h6 class="mb-0">Pedido # 458909879</h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <a class="view-details" href="#">Ver detalles</a>
+                            <div class="v-divisor"></div>
+                            <a class="view-invoice" href="#">Ver factura</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card order-card">
+                      <div class="d-flex">
+                        <div class="col-md-8 content-item-group">
+                          <div class="d-flex group-item">
+                            <div class="col-4 text-center">
+                              <div
+                                class="d-flex align-items-center justify-content-center h-100"
+                              >
+                                <img
+                                  class="img-card"
+                                  src="images/recomended/2.jpg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-8 card-detail">
+                              <h5>Nombre del artículo</h5>
+                              <div class="tag tag-sm tag-info">4,90 millas</div>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed sociis rutrum semper duis
+                                facilisis urna nibh integer. Quam elementum in
+                                ultricies eu nunc pretium.
+                              </p>
+                              <div
+                                class="content-buttons d-flex align-items-center gap-3"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary btn-sm w-100"
+                                >
+                                  Volver a canjear
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm w-100"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 card-date">
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center h-100"
+                          >
+                            <div class="date">
+                              <p>
+                                Fecha de canje: <br />
+                                29 de Noviembre del 2022
+                              </p>
+                            </div>
+                            <div class="d-grid gap-3 w-100">
+                              <button class="btn btn-primary" type="button">
+                                Seguimiento del pedido
+                              </button>
+                              <button class="btn btn-secondary" type="button">
+                                Escribir una reseña
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- acá -->
+                <div class="row detail-content-item">
+                  <div class="col-12 content-header">
+                    <div class="row align-items-center">
+                      <div class="col-7">
+                        <div class="d-flex justify-content-between gap-2">
+                          <div class="col title-header">
+                            <h6>Pedido realizado</h6>
+                            <p>xx de xxxxxmbre de xxxx</p>
+                          </div>
+                          <div class="col-1 title-header">
+                            <h6>Puntos</h6>
+                            <p>120.012</p>
+                          </div>
+                          <div class="col title-header">
+                            <h6>Envío a</h6>
+                            <p>Dirección con detalle de todo</p>
+                          </div>
+                          <div class="col-3 title-header">
+                            <h6>Recibido por</h6>
+                            <p>Nombre y apellido</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4 detail-links">
+                        <div
+                          class="d-flex justify-content-end align-items-center"
+                        >
+                          <div class="title-header">
+                            <h6 class="mb-0">Pedido # 458909879</h6>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center gap-3"
+                          >
+                            <a class="view-details" href="#">Ver detalles</a>
+                            <div class="v-divisor"></div>
+                            <a class="view-invoice" href="#">Ver factura</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-1"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card order-card">
+                      <div class="d-flex">
+                        <div class="col-md-8 content-item-group">
+                          <div class="d-flex group-item">
+                            <div class="col-4 text-center">
+                              <div
+                                class="d-flex align-items-center justify-content-center h-100"
+                              >
+                                <img
+                                  class="img-card"
+                                  src="images/recomended/1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-8 card-detail">
+                              <h5>Nombre del artículo</h5>
+                              <div class="tag tag-sm tag-info">4,90 millas</div>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed sociis rutrum semper duis
+                                facilisis urna nibh integer. Quam elementum in
+                                ultricies eu nunc pretium.
+                              </p>
+                              <div
+                                class="content-buttons d-flex align-items-center gap-3"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary btn-sm w-100"
+                                >
+                                  Volver a canjear
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm w-100"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex group-item">
+                            <div class="col-4 text-center">
+                              <div
+                                class="d-flex align-items-center justify-content-center h-100"
+                              >
+                                <img
+                                  class="img-card"
+                                  src="images/recomended/1.jpg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-8 card-detail">
+                              <h5>Nombre del artículo</h5>
+                              <div class="tag tag-sm tag-info">4,90 millas</div>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sed sociis rutrum semper duis
+                                facilisis urna nibh integer. Quam elementum in
+                                ultricies eu nunc pretium.
+                              </p>
+                              <div
+                                class="content-buttons d-flex align-items-center gap-3"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-secondary btn-sm w-100"
+                                >
+                                  Volver a canjear
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-sm w-100"
+                                >
+                                  Ver detalles
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 card-date">
+                          <div
+                            class="d-flex flex-column justify-content-center align-items-center h-100"
+                          >
+                            <div class="date">
+                              <p>
+                                Fecha de canje: <br />
+                                29 de Noviembre del 2022
+                              </p>
+                            </div>
+                            <div class="d-grid gap-3 w-100">
+                              <button class="btn btn-primary" type="button">
+                                Seguimiento del pedido
+                              </button>
+                              <button class="btn btn-secondary" type="button">
+                                Escribir una reseña
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

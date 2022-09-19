@@ -10,8 +10,134 @@
   color: #0d6efd;
 }
 /* --- end breadcrumb --- */
+/* --- custom pills tab --- */
+.custom-pills-tab .nav-link {
+  height: 36px;
+  padding: 7px 20px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+.custom-pills-tab .nav-link:disabled {
+  background-color: #dee1e5;
+  color: #bdc4ca;
+}
+/* --- end custom pills tab --- */
+
+/* --- order card --- */
+.detail-content-item {
+  margin-bottom: 60px;
+}
+.detail-content .content-header {
+  margin-bottom: 38px;
+}
+.detail-content .title-header h6 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 13px;
+}
+.detail-content .title-header p {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+}
+.detail-content .detail-links .title-header {
+  margin-right: 30px;
+}
+.order-card .img-card {
+  max-width: 100%;
+  height: 199px;
+  object-fit: contain;
+}
+.order-card {
+  background-color: #f9f9f9;
+  padding: 36px 24px;
+  margin: 0 77px;
+}
+.card-detail,
+.card-date {
+  margin-left: 18px;
+  border-left: 1px solid #dee1e5;
+  padding: 26px 18px;
+}
+.card-detail h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-detail p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 24px 0;
+}
+.card-detail .content-buttons {
+  width: 400px;
+}
+.card-date .date p {
+  margin: 0;
+}
+.card-date .date {
+  text-align: center;
+  color: #6ea8fe;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 34px;
+}
+.content-item-group .group-item {
+  margin-bottom: 36px;
+}
+.content-item-group .group-item:last-child {
+  margin-bottom: 0px;
+}
+/* --- end order card --- */
+
+/* --- tags --- */
+.tag {
+  border-radius: 25px;
+  font-size: 12px;
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;
+}
+.tag-info {
+  color: #121212;
+  background-color: #9ec5fe;
+}
+.tag-sm {
+  padding: 2px 8px;
+}
+/* --- end tags --- */
+
+/* --- btn --- */
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.btn-outline-secondary {
+  color: #6f42c1;
+  border-color: #6f42c1;
+}
+.btn-secondary {
+  background-color: #6f42c1;
+}
+/* --- end btn --- */
+
 .title-page {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 700;
 }
+.content-filter {
+  margin-bottom: 42px;
+}
+
+/* --- v-divisor --- */
+.v-divisor {
+  min-height: 33px;
+  height: 100%;
+  width: 1px;
+  background: #232426;
+}
+
+/* --- end v-divisor --- */

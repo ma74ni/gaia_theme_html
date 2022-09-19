@@ -472,7 +472,7 @@ label {
   width: 162px;
   margin: 0 auto;
 }
-.nav-pills .nav-item .nav-link {
+#onboardingModal .nav-pills .nav-item .nav-link {
   padding: 0 !important;
   height: 25px;
   width: 25px;
@@ -482,16 +482,16 @@ label {
   background-color: #dee1e5;
   color: #bdc4ca;
 }
-.nav-pills .nav-item .nav-link.active {
+#onboardingModal .nav-pills .nav-item .nav-link.active {
   color: #ffffff;
   background-color: #0d6efd;
 }
-.nav-pills .separator {
+#onboardingModal .nav-pills .separator {
   width: 43px;
   height: 2px;
   background-color: #dee1e5;
 }
-.nav-pills .separator.active {
+#onboardingModal .nav-pills .separator.active {
   background-color: #0d6efd;
 }
 .custom-modal-body {
