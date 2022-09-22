@@ -79,11 +79,13 @@
 }
 .card-date .date {
   text-align: center;
-  color: #6ea8fe;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 34px;
+}
+.card-date .btn-link {
+  text-decoration: none;
 }
 .content-item-group .group-item {
   margin-bottom: 36px;

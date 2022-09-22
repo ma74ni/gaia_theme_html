@@ -650,6 +650,7 @@
                 id="pills-tab"
                 role="tablist"
               >
+                <!-- Si no hay elementos, agregar el atributo 'disabled' -->
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link"
@@ -699,281 +700,321 @@
               show
               active
             >
-              <div class="detail-content">
-                <!-- aquí -->
-                <div class="row detail-content-item">
-                  <div class="col-12 content-header">
-                    <div class="row align-items-center">
-                      <div class="col-7">
-                        <div class="d-flex justify-content-between gap-2">
-                          <div class="col title-header">
-                            <h6>Pedido realizado</h6>
-                            <p>xx de xxxxxmbre de xxxx</p>
-                          </div>
-                          <div class="col-1 title-header">
-                            <h6>Puntos</h6>
-                            <p>120.012</p>
-                          </div>
-                          <div class="col title-header">
-                            <h6>Envío a</h6>
-                            <p>Dirección con detalle de todo</p>
-                          </div>
-                          <div class="col-3 title-header">
-                            <h6>Recibido por</h6>
-                            <p>Nombre y apellido</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 detail-links">
-                        <div
-                          class="d-flex justify-content-end align-items-center"
-                        >
-                          <div class="title-header">
-                            <h6 class="mb-0">Pedido # 458909879</h6>
-                          </div>
-                          <div
-                            class="d-flex justify-content-between align-items-center gap-3"
-                          >
-                            <a class="view-details" href="#">Ver detalles</a>
-                            <div class="v-divisor"></div>
-                            <a class="view-invoice" href="#">Ver factura</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="card order-card">
-                      <div class="d-flex">
-                        <div class="col-md-8 content-item-group">
-                          <div class="d-flex group-item">
-                            <div class="col-4 text-center">
-                              <div
-                                class="d-flex align-items-center justify-content-center h-100"
-                              >
-                                <img
-                                  class="img-card"
-                                  src="images/recomended/2.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="col-8 card-detail">
-                              <h5>Nombre del artículo</h5>
-                              <div class="tag tag-sm tag-info">4,90 millas</div>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed sociis rutrum semper duis
-                                facilisis urna nibh integer. Quam elementum in
-                                ultricies eu nunc pretium.
-                              </p>
-                              <div
-                                class="content-buttons d-flex align-items-center gap-3"
-                              >
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-secondary btn-sm w-100"
-                                >
-                                  Volver a canjear
-                                </button>
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-sm w-100"
-                                >
-                                  Ver detalles
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 card-date">
-                          <div
-                            class="d-flex flex-column justify-content-center align-items-center h-100"
-                          >
-                            <div class="date">
-                              <p>
-                                Fecha de canje: <br />
-                                29 de Noviembre del 2022
-                              </p>
-                            </div>
-                            <div class="d-grid gap-3 w-100">
-                              <button class="btn btn-primary" type="button">
-                                Seguimiento del pedido
-                              </button>
-                              <button class="btn btn-secondary" type="button">
-                                Escribir una reseña
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- acá -->
-                <div class="row detail-content-item">
-                  <div class="col-12 content-header">
-                    <div class="row align-items-center">
-                      <div class="col-7">
-                        <div class="d-flex justify-content-between gap-2">
-                          <div class="col title-header">
-                            <h6>Pedido realizado</h6>
-                            <p>xx de xxxxxmbre de xxxx</p>
-                          </div>
-                          <div class="col-1 title-header">
-                            <h6>Puntos</h6>
-                            <p>120.012</p>
-                          </div>
-                          <div class="col title-header">
-                            <h6>Envío a</h6>
-                            <p>Dirección con detalle de todo</p>
-                          </div>
-                          <div class="col-3 title-header">
-                            <h6>Recibido por</h6>
-                            <p>Nombre y apellido</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 detail-links">
-                        <div
-                          class="d-flex justify-content-end align-items-center"
-                        >
-                          <div class="title-header">
-                            <h6 class="mb-0">Pedido # 458909879</h6>
-                          </div>
-                          <div
-                            class="d-flex justify-content-between align-items-center gap-3"
-                          >
-                            <a class="view-details" href="#">Ver detalles</a>
-                            <div class="v-divisor"></div>
-                            <a class="view-invoice" href="#">Ver factura</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="card order-card">
-                      <div class="d-flex">
-                        <div class="col-md-8 content-item-group">
-                          <div class="d-flex group-item">
-                            <div class="col-4 text-center">
-                              <div
-                                class="d-flex align-items-center justify-content-center h-100"
-                              >
-                                <img
-                                  class="img-card"
-                                  src="images/recomended/1.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="col-8 card-detail">
-                              <h5>Nombre del artículo</h5>
-                              <div class="tag tag-sm tag-info">4,90 millas</div>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed sociis rutrum semper duis
-                                facilisis urna nibh integer. Quam elementum in
-                                ultricies eu nunc pretium.
-                              </p>
-                              <div
-                                class="content-buttons d-flex align-items-center gap-3"
-                              >
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-secondary btn-sm w-100"
-                                >
-                                  Volver a canjear
-                                </button>
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-sm w-100"
-                                >
-                                  Ver detalles
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="d-flex group-item">
-                            <div class="col-4 text-center">
-                              <div
-                                class="d-flex align-items-center justify-content-center h-100"
-                              >
-                                <img
-                                  class="img-card"
-                                  src="images/recomended/1.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                            <div class="col-8 card-detail">
-                              <h5>Nombre del artículo</h5>
-                              <div class="tag tag-sm tag-info">4,90 millas</div>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Sed sociis rutrum semper duis
-                                facilisis urna nibh integer. Quam elementum in
-                                ultricies eu nunc pretium.
-                              </p>
-                              <div
-                                class="content-buttons d-flex align-items-center gap-3"
-                              >
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-secondary btn-sm w-100"
-                                >
-                                  Volver a canjear
-                                </button>
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-sm w-100"
-                                >
-                                  Ver detalles
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 card-date">
-                          <div
-                            class="d-flex flex-column justify-content-center align-items-center h-100"
-                          >
-                            <div class="date">
-                              <p>
-                                Fecha de canje: <br />
-                                29 de Noviembre del 2022
-                              </p>
-                            </div>
-                            <div class="d-grid gap-3 w-100">
-                              <button class="btn btn-primary" type="button">
-                                Seguimiento del pedido
-                              </button>
-                              <button class="btn btn-secondary" type="button">
-                                Escribir una reseña
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <!-- pedidos vacío: si existen pedidos, agregar clase 'd-none' caso contrario quitar clase 'd-none' -->
+              <div class="row d-none">
+                <div class="col-12 justify-content-center">
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <img src="images/icons/info.svg" alt="" />
+                    <p>Todavía no tienes pedidos en tu historial.</p>
+                    <a href="" class="btn btn-primary"> Canjear productos </a>
                   </div>
                 </div>
               </div>
-              <div class="paginator">
-                <span class="label">Total 50 items</span>
-                <div class="content-buttons">
-                  <button type="button" class="btn-paginator" disabled>
-                    <
-                  </button>
-                  <button type="button" class="btn-paginator active">1</button>
-                  <button type="button" class="btn-paginator">2</button>
-                  <button type="button" class="btn-paginator">3</button>
-                  <button type="button" class="btn-paginator">></button>
+              <!--fin pedidos vacío-->
+              <!-- si hay pedidos: quitar clase 'd-none' caso contrario agregar clase 'd-none'-->
+              <div class="content-orders">
+                <div class="detail-content">
+                  <!-- aquí -->
+                  <div class="row detail-content-item">
+                    <div class="col-12 content-header">
+                      <div class="row align-items-center">
+                        <div class="col-7">
+                          <div class="d-flex justify-content-between gap-2">
+                            <div class="col title-header">
+                              <h6>Pedido realizado</h6>
+                              <p>xx de xxxxxmbre de xxxx</p>
+                            </div>
+                            <div class="col-1 title-header">
+                              <h6>Puntos</h6>
+                              <p>120.012</p>
+                            </div>
+                            <div class="col title-header">
+                              <h6>Envío a</h6>
+                              <p>Dirección con detalle de todo</p>
+                            </div>
+                            <div class="col-3 title-header">
+                              <h6>Recibido por</h6>
+                              <p>Nombre y apellido</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4 detail-links">
+                          <div
+                            class="d-flex justify-content-end align-items-center"
+                          >
+                            <div class="title-header">
+                              <h6 class="mb-0">Pedido # 458909879</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-3"
+                            >
+                              <a class="view-details" href="#">Ver detalles</a>
+                              <div class="v-divisor"></div>
+                              <a class="view-invoice" href="#">Ver factura</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card order-card">
+                        <div class="d-flex">
+                          <div class="col-md-8 content-item-group">
+                            <div class="d-flex group-item">
+                              <div class="col-4 text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-center h-100"
+                                >
+                                  <img
+                                    class="img-card"
+                                    src="images/recomended/2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-8 card-detail">
+                                <h5>Nombre del artículo</h5>
+                                <div class="tag tag-sm tag-info">
+                                  4,90 millas
+                                </div>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Sed sociis rutrum semper duis
+                                  facilisis urna nibh integer. Quam elementum in
+                                  ultricies eu nunc pretium.
+                                </p>
+                                <div
+                                  class="content-buttons d-flex align-items-center gap-3"
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-secondary btn-sm w-100"
+                                  >
+                                    Volver a canjear
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary btn-sm w-100"
+                                  >
+                                    Ver detalles
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 card-date">
+                            <div
+                              class="d-flex flex-column justify-content-center align-items-center h-100"
+                            >
+                              <div class="date">
+                                <p>
+                                  Fecha de canje: <br />
+                                  29 de Noviembre del 2022
+                                </p>
+                              </div>
+                              <div
+                                class="d-grid gap-3 w-100 content-date-buttons"
+                              >
+                                <button class="btn btn-primary" type="button">
+                                  Seguimiento del pedido
+                                </button>
+                                <button class="btn btn-secondary" type="button">
+                                  Escribir una reseña
+                                </button>
+                                <!-- ver más: si productos > 2 quitar la clase d-none -->
+                                <button
+                                  class="btn btn-link d-none"
+                                  type="button"
+                                >
+                                  Ver más artículos de este pedido
+                                </button>
+                                <!-- ver más-->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- acá -->
+                  <div class="row detail-content-item">
+                    <div class="col-12 content-header">
+                      <div class="row align-items-center">
+                        <div class="col-7">
+                          <div class="d-flex justify-content-between gap-2">
+                            <div class="col title-header">
+                              <h6>Pedido realizado</h6>
+                              <p>xx de xxxxxmbre de xxxx</p>
+                            </div>
+                            <div class="col-1 title-header">
+                              <h6>Puntos</h6>
+                              <p>120.012</p>
+                            </div>
+                            <div class="col title-header">
+                              <h6>Envío a</h6>
+                              <p>Dirección con detalle de todo</p>
+                            </div>
+                            <div class="col-3 title-header">
+                              <h6>Recibido por</h6>
+                              <p>Nombre y apellido</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4 detail-links">
+                          <div
+                            class="d-flex justify-content-end align-items-center"
+                          >
+                            <div class="title-header">
+                              <h6 class="mb-0">Pedido # 458909879</h6>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-3"
+                            >
+                              <a class="view-details" href="#">Ver detalles</a>
+                              <div class="v-divisor"></div>
+                              <a class="view-invoice" href="#">Ver factura</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="card order-card">
+                        <div class="d-flex">
+                          <div class="col-md-8 content-item-group">
+                            <div class="d-flex group-item">
+                              <div class="col-4 text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-center h-100"
+                                >
+                                  <img
+                                    class="img-card"
+                                    src="images/recomended/1.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-8 card-detail">
+                                <h5>Nombre del artículo</h5>
+                                <div class="tag tag-sm tag-info">
+                                  4,90 millas
+                                </div>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Sed sociis rutrum semper duis
+                                  facilisis urna nibh integer. Quam elementum in
+                                  ultricies eu nunc pretium.
+                                </p>
+                                <div
+                                  class="content-buttons d-flex align-items-center gap-3"
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-secondary btn-sm w-100"
+                                  >
+                                    Volver a canjear
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary btn-sm w-100"
+                                  >
+                                    Ver detalles
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex group-item">
+                              <div class="col-4 text-center">
+                                <div
+                                  class="d-flex align-items-center justify-content-center h-100"
+                                >
+                                  <img
+                                    class="img-card"
+                                    src="images/recomended/1.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col-8 card-detail">
+                                <h5>Nombre del artículo</h5>
+                                <div class="tag tag-sm tag-info">
+                                  4,90 millas
+                                </div>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit. Sed sociis rutrum semper duis
+                                  facilisis urna nibh integer. Quam elementum in
+                                  ultricies eu nunc pretium.
+                                </p>
+                                <div
+                                  class="content-buttons d-flex align-items-center gap-3"
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn btn-outline-secondary btn-sm w-100"
+                                  >
+                                    Volver a canjear
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary btn-sm w-100"
+                                  >
+                                    Ver detalles
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 card-date">
+                            <div
+                              class="d-flex flex-column justify-content-center align-items-center h-100"
+                            >
+                              <div class="date">
+                                <p>
+                                  Fecha de canje: <br />
+                                  29 de Noviembre del 2022
+                                </p>
+                              </div>
+                              <div class="d-grid gap-3 w-100">
+                                <button class="btn btn-primary" type="button">
+                                  Seguimiento del pedido
+                                </button>
+                                <button class="btn btn-secondary" type="button">
+                                  Escribir una reseña
+                                </button>
+                                <!-- ver más: si productos > 2 quitar la clase d-none -->
+                                <button class="btn btn-link" type="button">
+                                  Ver más artículos de este pedido
+                                </button>
+                                <!-- ver más-->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paginator">
+                  <span class="label">Total 50 items</span>
+                  <div class="content-buttons">
+                    <button type="button" class="btn-paginator" disabled>
+                      <
+                    </button>
+                    <button type="button" class="btn-paginator active">
+                      1
+                    </button>
+                    <button type="button" class="btn-paginator">2</button>
+                    <button type="button" class="btn-paginator">3</button>
+                    <button type="button" class="btn-paginator">></button>
+                  </div>
                 </div>
               </div>
+              <!-- fin si hay pedidos-->
             </div>
           </div>
         </div>
