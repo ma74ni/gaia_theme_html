@@ -184,3 +184,191 @@
   border-color: #0d6efd;
 }
 /* --- end paginator --- */
+/* --- datepicker --- */
+.input-daterange .group {
+  margin-bottom: 0;
+}
+.calendar-chev {
+  height: 15px;
+}
+.calendar-chev-left {
+  background: url('../images/icons/dp_chev_left.svg') no-repeat;
+  background-position: left center;
+}
+.calendar-chev-right {
+  background: url('../images/icons/dp_chev_right.svg') no-repeat;
+  background-position: right center;
+}
+.prev {
+  padding-left: 8px;
+}
+.next {
+  padding-right: 8px;
+}
+.input-daterange {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  position: relative;
+}
+.content-input-dp {
+  background-color: #eff0f2;
+  padding: 17px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #bdc4ca;
+  border-radius: 4px 4px 0 0;
+}
+.content-input-dp img {
+  opacity: 0.3;
+}
+.content-input-dp:hover {
+  border-color: #0d6efd;
+}
+.input-daterange input {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  text-align: left;
+}
+
+.input-daterange input:focus {
+  outline: none;
+}
+
+.datepicker-dropdown {
+  margin-top: 24px;
+}
+
+.content-input-dp label {
+  top: 18px;
+  left: 12px;
+}
+.content-input-dp.selected {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #232426;
+}
+.content-input-dp.selected img {
+  opacity: 1;
+}
+.content-input-dp.selected label {
+  top: -8px;
+  font-size: 10px;
+  color: #232426;
+  left: 11px;
+  background: #ffffff;
+}
+.datepicker {
+  padding: 0;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  width: 300px;
+}
+.datepicker table {
+  width: 100%;
+}
+.datepicker-days,
+.datepicker-months,
+.datepicker-years {
+  color: #232426;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0;
+}
+.datepicker-months table thead tr:last-child,
+.datepicker-years table thead tr:last-child {
+  border-bottom: 1px solid #bdc4ca;
+}
+.datepicker-days table thead tr:last-child {
+  border-top: 1px solid #bdc4ca;
+}
+.datepicker-days table tbody,
+.datepicker-months table tbody,
+.datepicker-years table tbody {
+  border-bottom: 1px solid #bdc4ca;
+}
+.datepicker-days table tbody tr td {
+  padding: 10px 10px;
+}
+.datepicker-months table thead tr:last-child th,
+.datepicker-years table thead tr:last-child th {
+  padding: 16px 0px;
+}
+.datepicker-months table thead tr:last-child th:first-child,
+.datepicker-months table tbody tr td:first-child,
+.datepicker-years table thead tr:last-child th:first-child,
+.datepicker-years table tbody tr td:first-child {
+  padding-left: 10px;
+}
+.datepicker-days table thead tr:last-child th {
+  padding: 16px 10px;
+}
+.datepicker-days table thead tr:last-child th:first-child,
+.datepicker-days table tbody tr td:first-child {
+  padding-left: 20px;
+}
+.datepicker-months table thead tr:last-child th:last-child,
+.datepicker-months table tbody tr td:last-child,
+.datepicker-years table thead tr:last-child th:last-child,
+.datepicker-years table tbody tr td:last-child {
+  padding-right: 10px;
+}
+.datepicker-days table thead tr:last-child th:last-child,
+.datepicker-days table tbody tr td:last-child {
+  padding-right: 20px;
+}
+.datepicker-days table thead tr:nth-child(2) th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.datepicker table tr td.new,
+.datepicker table tr td.old {
+  color: #8a9197;
+}
+.datepicker table tr td.today {
+  background: none;
+  color: #0d6efd;
+}
+.datepicker table tfoot tr th {
+  padding: 12px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d6efd;
+}
+.datepicker table tr td span {
+  height: 25px;
+  margin: 12px 2.8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.datepicker table tr td span.focused,
+.datepicker table tr td span:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+.datepicker .datepicker-switch:hover,
+.datepicker .next:hover,
+.datepicker .prev:hover,
+.datepicker tfoot tr th:hover {
+  background: none;
+}
+.datepicker table tr td.range.today {
+  background: #eee;
+}
+.datepicker table tr td.active.active {
+  background: #0d6efd;
+}
+.datepicker table tr td.today:hover:hover {
+  background: none;
+}
+.datepicker table tr td.today:hover:hover {
+  color: #0d6efd;
+}
+/* --- end datepicker --- */

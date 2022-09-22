@@ -67,4 +67,87 @@ $(document).ready(function () {
     },
   });
   /**/
+  /* --- datapicker --- */
+  $(function () {
+    $.fn.datepicker.dates['es'] = {
+      months: [
+        'Enero',
+        'Febrero',
+        'Marzo',
+        'Abril',
+        'Mayo',
+        'Junio',
+        'Julio',
+        'Agosto',
+        'Septiembre',
+        'Octubre',
+        'Noviembre',
+        'Diciembre',
+      ],
+      monthsShort: [
+        'Ene',
+        'Feb',
+        'Mar',
+        'Abr',
+        'May',
+        'Jun',
+        'Jul',
+        'Ago',
+        'Sep',
+        'Oct',
+        'Nov',
+        'Dic',
+      ],
+      days: [
+        'Domingo',
+        'Lunes',
+        'Martes',
+        'Miércoles',
+        'Jueves',
+        'Viernes',
+        'Sábado',
+      ],
+      daysShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+      daysMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+      today: 'Hoy',
+      clear: 'Limpiar',
+      format: 'dd/mm/yyyy',
+      weekStart: 1,
+      titleFormat: 'M yyyy',
+    };
+    $('#filter-orders-dp .input-daterange').datepicker({
+      todayBtn: true,
+      todayHighlight: true,
+      language: 'es',
+      maxViewMode: 2,
+      templates: {
+        leftArrow: '<div class="calendar-chev calendar-chev-left"></div>',
+        rightArrow: '<div class="calendar-chev calendar-chev-right"></div>',
+      },
+    });
+
+    $(".group input[name='start']")
+      .focusin(function () {
+        $(this).parent().addClass('selected');
+      })
+      .focusout(function () {
+        if ($(this).val() === '') {
+          $(this).parent().removeClass('selected');
+        }
+      });
+    $(".group input[name='end']")
+      .focusin(function () {
+        $(this).parent().addClass('selected');
+      })
+      .focusout(function () {
+        if ($(this).val() === '') {
+          $(this).parent().removeClass('selected');
+        }
+      });
+
+    $('.group input').on('change', function () {
+      $(this).parent().addClass('selected');
+    });
+  });
+  /* ---end datapicker --- */
 });
