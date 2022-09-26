@@ -371,4 +371,7 @@
 .datepicker table tr td.today:hover:hover {
   color: #0d6efd;
 }
+.datepicker table tr td.active {
+  color: #ffffff;
+}
 /* --- end datepicker --- */

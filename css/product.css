@@ -1,0 +1,203 @@
+.product-content {
+  margin: 0 16px;
+}
+.product-image {
+  width: 464px;
+}
+.product-image img {
+  max-width: 100%;
+  height: 464px;
+}
+.product-thumbnails {
+  margin: 0 0 0 16px;
+  width: 80px;
+}
+.product-thumbnails img {
+  margin-top: 16px;
+  max-width: 100%;
+  height: 80px;
+}
+.product-thumbnails img:first-child {
+  margin-top: 0;
+}
+.product-general-feature {
+  height: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #232426;
+}
+.product-general-feature .model {
+  color: #8a9197;
+  border-left: 1px solid #232426;
+  margin-left: 18px;
+  padding-left: 18px;
+}
+.product-content .stock {
+  margin: 16px 0;
+}
+/* --- table --- */
+.product-specific-feature.table {
+  margin: 16px 0;
+}
+.product-specific-feature.table table {
+  background-color: #eff0f2;
+}
+.product-specific-feature.table .table-striped tbody tr:nth-of-type(odd) td {
+  background: #f9f9f9;
+  --bs-table-accent-bg: #f9f9f9;
+  border: 0;
+}
+.product-specific-feature.table .table-striped tbody tr,
+.product-specific-feature.table .table-striped tbody tr td {
+  border-bottom-width: 0;
+}
+.product-specific-feature.table .table-striped tbody tr td {
+  padding: 10px 24px;
+}
+/* --- end table --- */
+
+/* --- product specific feature --- */
+.content-product-specific-feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px 0;
+}
+.product-specific-feature .psf-title {
+  color: #0d6efd;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 0 16px;
+}
+/* --- end product specific feature --- */
+
+/* --- color selector --- */
+.color-selector,
+.size-selector {
+  display: flex;
+  gap: 12px;
+}
+.color-selector .selection {
+  text-align: center;
+}
+.size-selector .selection label,
+.color-selector .selection label {
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  pointer-events: initial;
+  position: initial;
+  min-width: 25px;
+}
+.color-selector .selection label {
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.color-selector .selection label:hover {
+  border: 1px solid #9ec5fe;
+}
+.size-selector .selection input[type='radio'],
+.color-selector .selection input[type='radio'] {
+  display: none;
+}
+
+.color-selector .selection input[type='radio']:checked ~ label {
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+.color-selector p {
+  margin: 0;
+}
+/* --- end color selector --- */
+/* --- size selector --- */
+.size-selector .selection label {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+    0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #232426;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.size-selector .selection label:hover {
+  color: #0d6efd;
+}
+.size-selector .selection input[type='radio']:checked ~ label {
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3),
+    inset 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+/* --- end size selector --- */
+/* --- selected features ---*/
+.product-specific-feature.features {
+  width: 300px;
+}
+/* --- end selected features --- */
+/* --- custom select --- */
+.custom-select {
+  position: relative;
+  background-color: #eff0f2;
+  border-radius: 4px 4px 0 0;
+  padding: 15px 12px;
+  border-bottom: 1px solid #bdc4ca;
+}
+.custom-select:hover {
+  border-color: #0d6efd;
+  border-width: 2px;
+}
+.custom-select select {
+  background-color: transparent;
+  border: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.custom-select select:focus {
+  border: none;
+  box-shadow: none;
+}
+.custom-select select:focus label {
+  top: -5px;
+  left: 5px;
+}
+.custom-select label {
+  color: #8a9197;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+.custom-select.changed {
+  background-color: #ffffff;
+  border: 1px solid #0d6efd;
+  border-radius: 4px;
+}
+.custom-select.changed label {
+  top: -9px;
+  left: 6px;
+  font-size: 10px;
+  color: #0d6efd;
+  background: linear-gradient(0, #ffffff 50%, transparent 50%);
+}
+.custom-select.changed.active {
+  background-color: #ffffff;
+  border: 1px solid #232426;
+}
+.custom-select.changed label {
+  color: #0d6efd;
+  background: linear-gradient(0, #ffffff 50%, transparent 50%);
+}
+.custom-select.changed.active label {
+  color: #232426;
+}
+/* --- end custom select --- */
+
+@media (min-width: 1400px) {
+  .product-content {
+    margin: 0 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .product-content {
+    margin: 0 150px;
+  }
+}
