@@ -16,6 +16,7 @@
   margin-top: 16px;
   max-width: 100%;
   height: 80px;
+  cursor: pointer;
 }
 .product-thumbnails img:first-child {
   margin-top: 0;
@@ -191,6 +192,71 @@
 }
 /* --- end custom select --- */
 
+/* --- product price --- */
+.product-price {
+  padding: 40px 0;
+}
+.product-price-header {
+  padding: 0 12px;
+  margin-bottom: 16px;
+}
+.product-price-header .cost {
+  color: #0d6efd;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.product-price-header .old-price {
+  color: #8a9197;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+}
+.product-price-body {
+  padding: 16px 12px;
+}
+.product-price-body .custom-list {
+  margin: 16px 0 20px;
+}
+.product-price-body .custom-list .custom-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 11px;
+}
+.product-price-body .custom-list .custom-list-item:last-child {
+  margin-bottom: 0;
+}
+.product-price-body .content-buttons {
+  margin: 22px 0 0;
+}
+/* --- end product price --- */
+/* --- tag --- */
+.custom-text-bg-info {
+  background-color: #cff4fc;
+  border: 1px solid #0dcaf0;
+  color: #0dcaf0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+/* --- end tag --- */
+/* --- button icons: edit previus css --- */
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+/* --- end button icons --- */
+
 @media (min-width: 1400px) {
   .product-content {
     margin: 0 50px;
@@ -198,6 +264,6 @@
 }
 @media (min-width: 1920px) {
   .product-content {
-    margin: 0 150px;
+    margin: 0 130px;
   }
 }

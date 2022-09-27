@@ -172,4 +172,12 @@ $(document).ready(function () {
       }
     });
   /* --- end select --- */
+  /* --- select product gallery --- */
+  $('.product-thumbnails img').on('click', function () {
+    const image = $(this).attr('src');
+    if (image) {
+      $('.product-image img').attr('src', image);
+    }
+  });
+  /* --- end select product gallery --- */
 });

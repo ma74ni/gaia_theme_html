@@ -684,14 +684,6 @@ label {
 }
 /* --- end custom counter input --- */
 
-/* --- custom button with icon --- */
-.btn-icon {
-  display: flex;
-  padding: 10px 28px;
-  justify-content: space-between;
-  align-items: center;
-}
-/* --- custom button with icon --- */
 .outline-none {
   border: none;
   background: transparent;
