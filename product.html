@@ -658,9 +658,14 @@
                           src="images/banners/1st.jpg"
                           alt=""
                         />
+                        <!-- new-tag: show if product is new -->
+                        <div class="new-tag">
+                          <span class="badge bg-danger">Nuevo</span>
+                        </div>
+                        <!-- end new-tag: show if product is new -->
                       </div>
                       <div class="product-thumbnails">
-                        <!-- if number of thumbnails is < 5 add class 'justify-content-start gap-2' else add class "justify-content-between" -->
+                        <!-- if number of thumbnails is < 5 add class 'gap-2' and remove class 'justify-content-between', else, add class 'justify-content-between' and remove class="gap-2" -->
                         <div
                           class="d-flex flex-column h-100 justify-content-start gap-2"
                         >
@@ -670,6 +675,7 @@
                           <img src="images/product/product1_4.webp" alt="" />
                           <!--<img src="images/product/product1_4.webp" alt="" />-->
                         </div>
+                        <!-- end -->
                       </div>
                     </div>
                   </div>

@@ -1,5 +1,11 @@
 .product-image {
   width: 464px;
+  position: relative;
+}
+.product-image .new-tag {
+  position: absolute;
+  top: 24px;
+  left: 36px;
 }
 .product-image img {
   max-width: 100%;
