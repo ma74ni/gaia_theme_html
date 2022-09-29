@@ -197,7 +197,7 @@
 
 /* --- product price --- */
 .product-price {
-  padding: 40px 0;
+  padding: 40px 0 160px;
 }
 .product-price-header {
   padding: 0 12px;
@@ -259,6 +259,13 @@
   gap: 12px;
 }
 /* --- end button icons --- */
+.product-description {
+  margin: 40px 0;
+  padding: 40px 0;
+  border-top: 1px solid #686d71;
+  color: #232426;
+  font-family: 'Montserrat', sans-serif;
+}
 
 @media (min-width: 1200px) {
   .content-product-galery {
