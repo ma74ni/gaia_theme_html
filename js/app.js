@@ -180,4 +180,12 @@ $(document).ready(function () {
     }
   });
   /* --- end select product gallery --- */
+  /* select image on modal */
+  $('.modal-thumbnail img').on('click', function () {
+    const image = $(this).attr('src');
+    if (image) {
+      $('.modal-product-image img').attr('src', image);
+    }
+  });
+  /* end select image on modal */
 });

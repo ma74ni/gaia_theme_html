@@ -653,11 +653,17 @@
                   <div class="content-product-galery">
                     <div class="d-flex justify-content-between">
                       <div class="product-image">
-                        <img
-                          class="img-fluid"
-                          src="images/banners/1st.jpg"
-                          alt=""
-                        />
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#productModal"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="images/banners/1st.jpg"
+                            alt=""
+                          />
+                        </a>
                         <!-- new-tag: show if product is new -->
                         <div class="new-tag">
                           <span class="badge bg-danger">Nuevo</span>
@@ -945,6 +951,70 @@
               </div>
             </div>
           </div>
+          <div
+            class="modal fade"
+            id="productModal"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="productModalLabel"
+            aria-hidden="true"
+          >
+            <!--Modal-->
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ProductModalLabel">Produto 1</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <div class="row modal-product-image">
+                      <img src="images/banners/1st.jpg" alt="" />
+                    </div>
+                    <div class="row">
+                      <div class="modal-thumbnail">
+                        <img
+                          class="img-fluid"
+                          src="images/banners/1st.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="modal-thumbnail">
+                        <img
+                          class="img-fluid"
+                          src="images/recomended/1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="modal-thumbnail">
+                        <img
+                          class="img-fluid"
+                          src="images/recomended/2.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam eligendi cum dolorem voluptatum quasi, asperiores
+                    culpa. Tempore deserunt nisi enim, aspernatur, sed
+                    exercitationem praesentium asperiores expedita, similique
+                    fugit esse laudantium!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end modal-->
         </div>
       </div>
     </main>
