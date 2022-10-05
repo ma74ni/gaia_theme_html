@@ -27,7 +27,7 @@
     <!-- end datepicker -->
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/myorders.css" />
-    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/product2.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -647,68 +647,45 @@
             </ol>
           </nav>
           <div class="product-content">
-            <div class="row">
-              <div class="col-10 mx-auto">
+            <div class="d-flex justify-content-between">
+              <div class="content-product-galery">
                 <div class="d-flex justify-content-between">
-                  <div class="content-product-galery">
-                    <div class="d-flex justify-content-between">
-                      <div class="product-image">
-                        <a
-                          href="#"
-                          data-bs-toggle="modal"
-                          data-bs-target="#productModal"
-                        >
-                          <img
-                            class="img-fluid"
-                            src="images/banners/1st.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <!-- new-tag: show if product is new -->
-                        <div class="new-tag">
-                          <span class="badge bg-danger">Nuevo</span>
-                        </div>
-                        <!-- end new-tag: show if product is new -->
-                      </div>
-                      <div class="product-thumbnails">
-                        <!-- if number of thumbnails is < 5 add class 'gap-2' and remove class 'justify-content-between', else, add class 'justify-content-between' and remove class="gap-2" -->
-                        <div
-                          class="d-flex flex-column h-100 justify-content-start gap-2"
-                        >
-                          <img src="images/banners/1st.jpg" alt="" />
-                          <img src="images/product/product1_2.webp" alt="" />
-                          <img src="images/product/product1_3.webp" alt="" />
-                          <img src="images/product/product1_4.webp" alt="" />
-                          <!--<img src="images/product/product1_4.webp" alt="" />-->
-                        </div>
-                        <!-- end -->
-                      </div>
+                  <div class="col product-image">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#productModal"
+                    >
+                      <img
+                        class="img-fluid"
+                        src="images/banners/1st.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <!-- new-tag: show if product is new -->
+                    <div class="new-tag">
+                      <span class="badge bg-danger">Nuevo</span>
                     </div>
-                    <div class="product-description">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus harum at inventore dolorem accusamus, beatae,
-                        ipsum consectetur debitis adipisci sapiente minus
-                        praesentium earum illo illum ex laudantium corrupti
-                        aliquam laboriosam?
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus harum at inventore dolorem accusamus, beatae,
-                        ipsum consectetur debitis adipisci sapiente minus
-                        praesentium earum illo illum ex laudantium corrupti
-                        aliquam laboriosam?
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ducimus harum at inventore dolorem accusamus, beatae,
-                        ipsum consectetur debitis adipisci sapiente minus
-                        praesentium earum illo illum ex laudantium corrupti
-                        aliquam laboriosam?
-                      </p>
-                    </div>
+                    <!-- end new-tag: show if product is new -->
                   </div>
-                  <div class="content-product-description">
+                  <div class="product-thumbnails">
+                    <!-- if number of thumbnails is < 5 add class 'gap-2' and remove class 'justify-content-start', else, add class 'justify-content-between' and remove class="gap-2" -->
+                    <div
+                      class="d-flex flex-column h-100 justify-content-between"
+                    >
+                      <img src="images/banners/1st.jpg" alt="" />
+                      <img src="images/product/product1_2.webp" alt="" />
+                      <img src="images/product/product1_3.webp" alt="" />
+                      <img src="images/product/product1_4.webp" alt="" />
+                      <img src="images/product/product1_4.webp" alt="" />
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+              </div>
+              <div class="content-product-description">
+                <div class="container-fluid">
+                  <div class="row">
                     <h2 class="title-page">Producto 1</h2>
                     <div class="product-general-feature d-flex">
                       <div class="brand">Adidas</div>
@@ -719,102 +696,38 @@
                         ><img src="images/icons/stock.svg" alt="" /> Stock</span
                       >
                     </div>
-                    <div class="divider"></div>
-                    <div class="content-product-specific-feature">
-                      <!-- color selector-->
-                      <div class="product-specific-feature color">
-                        <div class="psf-title">Guía de color</div>
-                        <div class="psf-desc color-selector">
-                          <!-- item color -->
-                          <div class="selection">
-                            <input id="red" name="color" type="radio" />
-                            <label
-                              for="red"
-                              style="background-color: #dc3545"
-                            ></label>
-                            <p style="color: #dc3545">rojo</p>
-                          </div>
-                          <!-- end item color -->
-                          <div class="selection">
-                            <input id="grape" name="color" type="radio" />
-                            <label
-                              for="grape"
-                              style="background-color: #8540f5"
-                            ></label>
-                            <p style="color: #8540f5">uva</p>
-                          </div>
-                          <div class="selection">
-                            <input id="coral" name="color" type="radio" />
-                            <label
-                              for="coral"
-                              style="background-color: #ea868f"
-                            ></label>
-                            <p style="color: #ea868f">coral</p>
-                          </div>
-                          <div class="selection">
-                            <input id="clst" name="color" type="radio" />
-                            <label
-                              for="clst"
-                              style="background-color: #0dcaf0"
-                            ></label>
-                            <p style="color: #0dcaf0">clst</p>
-                          </div>
-                          <!-- 
-                        <div class="selection">
-                          <input id="blue" name="color" type="radio" />
-                          <label
-                            for="blue"
-                            style="background-color: #0000ff"
-                          ></label>
-                          <p style="color: #0000ff">azul</p>
-                        </div>
-                        <div class="selection">
-                          <input id="black" name="color" type="radio" />
-                          <label
-                            for="black"
-                            style="background-color: #000000"
-                          ></label>
-                          <p style="color: #000000">ngro</p>
-                        </div> -->
+                  </div>
+                </div>
+                <div class="content-product-specific-feature">
+                  <div class="container-fluid">
+                    <div class="row mb-4">
+                      <div class="col-md-6 product-specific-feature">
+                        <div class="psf-title">Talla</div>
+                        <div class="custom-select">
+                          <label for="features-select">Select </label>
+                          <select id="features-select" class="form-select">
+                            <option selected></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
-                      <!-- end color selector -->
-                      <!-- size selector -->
-                      <div class="product-specific-feature sizes">
-                        <div class="psf-title">Guía de tallas</div>
-                        <div class="psf-desc size-selector">
-                          <!-- item size -->
-                          <div class="selection">
-                            <input id="xs" name="size" type="radio" />
-                            <label for="xs">XS</label>
-                          </div>
-                          <!-- end item size -->
-                          <div class="selection">
-                            <input id="s" name="size" type="radio" />
-                            <label for="s">S</label>
-                          </div>
-                          <div class="selection">
-                            <input id="m" name="size" type="radio" />
-                            <label for="m">m</label>
-                          </div>
-                          <div class="selection">
-                            <input id="l" name="size" type="radio" />
-                            <label for="l">l</label>
-                          </div>
-                          <!-- 
-                          <div class="selection">
-                          <input id="xl" name="size" type="radio" />
-                          <label for="xl">xl</label>
-                        </div>
-                        <div class="selection">
-                          <input id="xxl" name="size" type="radio" />
-                          <label for="xxl">xxl</label>
-                        </div>
-                         -->
+                      <div class="col-md-6 product-specific-feature">
+                        <div class="psf-title">Color</div>
+                        <div class="custom-select">
+                          <label for="features-select">Select </label>
+                          <select id="features-select" class="form-select">
+                            <option selected></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                         </div>
                       </div>
-                      <!-- end size selector -->
-                      <div class="product-specific-feature features">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 product-specific-feature features">
                         <div class="psf-title">
                           Características seleccionables
                         </div>
@@ -831,124 +744,109 @@
                         </div>
                       </div>
                     </div>
-                    <div class="divider"></div>
-                    <div class="product-specific-feature table">
-                      <table class="table table-striped">
-                        <tbody>
-                          <tr>
-                            <td scope="row">Tipo</td>
-                            <td class="text-center">Descripción</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Material</td>
-                            <td class="text-center">Descripción</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Dimensiones</td>
-                            <td class="text-center">Descripción</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Peso</td>
-                            <td class="text-center">Descripción</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Característica</td>
-                            <td class="text-center">Descripción</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Acción</td>
-                            <td>
-                              <div class="d-grid gap-2">
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-sm btn-icon"
-                                >
-                                  Compartir
-                                  <img
-                                    src="images/icons/arrow_btn_right.svg"
-                                    alt=""
-                                  />
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="divider"></div>
+                </div>
+                <div class="product-specific-feature table">
+                  <div class="container-fluid">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <td scope="row">Dimensiones</td>
+                          <td class="text-center">Descripción</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Peso</td>
+                          <td class="text-center">Descripción</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="content-product-price">
+                <div class="card product-price">
+                  <div class="product-price-header">
+                    <div class="cost">120.000 puntos</div>
+                    <div class="content-old-price d-flex gap-3">
+                      <div class="old-price">155.000 puntos</div>
+                      <span class="badge custom-text-bg-info">Tag 1</span>
                     </div>
                   </div>
-                  <div class="content-product-price">
-                    <div class="card product-price">
-                      <div class="product-price-header">
-                        <div class="cost">120.000 puntos</div>
-                        <div class="content-old-price d-flex gap-3">
-                          <div class="old-price">155.000 puntos</div>
-                          <span class="badge custom-text-bg-info">Tag 1</span>
-                        </div>
+                  <div class="divider"></div>
+                  <div class="product-price-body">
+                    <div>
+                      <span class="badge badge-icon custom-text-bg-info"
+                        ><img src="images/icons/apps.svg" alt="" /> Tag 1</span
+                      >
+                    </div>
+                    <div class="custom-list">
+                      <div class="custom-list-item">
+                        <img src="images/icons/schedule.svg" alt="" />
+                        Text with an icon l
                       </div>
-                      <div class="divider"></div>
-                      <div class="product-price-body">
-                        <div>
-                          <span class="badge badge-icon custom-text-bg-info"
-                            ><img src="images/icons/apps.svg" alt="" /> Tag
-                            1</span
-                          >
-                        </div>
-                        <div class="custom-list">
-                          <div class="custom-list-item">
-                            <img src="images/icons/schedule.svg" alt="" />
-                            Text with an icon l
-                          </div>
-                          <div class="custom-list-item">
-                            <img src="images/icons/local_offer.svg" alt="" />
-                            Text with an icon l
-                          </div>
-                        </div>
-                        <div class="counter">
-                          <div
-                            class="d-flex align-items-center justify-content-between ms-2"
-                          >
-                            <button type="button" class="btn-counter">
-                              <img src="images/icons/less.svg" alt="" />
-                            </button>
-                            <input
-                              type="text"
-                              class="numeric-input"
-                              value="1"
-                            />
-                            <button type="button" class="btn-counter">
-                              <img src="images/icons/add.svg" alt="" />
-                            </button>
-                          </div>
-                        </div>
-                        <div class="d-grid gap-3 content-buttons">
-                          <button
-                            class="btn btn-primary btn-icon"
-                            type="button"
-                          >
-                            Ir a Canjear
-                            <span class="btn-label"
-                              ><img
-                                src="images/icons/arrow_btn_right.svg"
-                                alt=""
-                            /></span>
-                          </button>
-                          <button
-                            class="btn btn-outline-secondary btn-icon"
-                            type="button"
-                          >
-                            Agregar al carrito
-                            <span class="btn-label"
-                              ><img
-                                src="images/icons/shopping_cart_secondary.svg"
-                                alt=""
-                            /></span>
-                          </button>
-                        </div>
+                      <div class="custom-list-item">
+                        <img src="images/icons/local_offer.svg" alt="" />
+                        Text with an icon l
                       </div>
+                    </div>
+                    <div class="counter">
+                      <div
+                        class="d-flex align-items-center justify-content-between ms-2"
+                      >
+                        <button type="button" class="btn-counter">
+                          <img src="images/icons/less.svg" alt="" />
+                        </button>
+                        <input type="text" class="numeric-input" value="1" />
+                        <button type="button" class="btn-counter">
+                          <img src="images/icons/add.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-3 content-buttons">
+                      <button class="btn btn-primary btn-icon" type="button">
+                        Ir a Canjear
+                        <span class="btn-label"
+                          ><img src="images/icons/arrow_btn_right.svg" alt=""
+                        /></span>
+                      </button>
+                      <button
+                        class="btn btn-outline-secondary btn-icon"
+                        type="button"
+                      >
+                        Agregar al carrito
+                        <span class="btn-label"
+                          ><img
+                            src="images/icons/shopping_cart_secondary.svg"
+                            alt=""
+                        /></span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="product-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                harum at inventore dolorem accusamus, beatae, ipsum consectetur
+                debitis adipisci sapiente minus praesentium earum illo illum ex
+                laudantium corrupti aliquam laboriosam?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                harum at inventore dolorem accusamus, beatae, ipsum consectetur
+                debitis adipisci sapiente minus praesentium earum illo illum ex
+                laudantium corrupti aliquam laboriosam?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                harum at inventore dolorem accusamus, beatae, ipsum consectetur
+                debitis adipisci sapiente minus praesentium earum illo illum ex
+                laudantium corrupti aliquam laboriosam?
+              </p>
             </div>
           </div>
           <div

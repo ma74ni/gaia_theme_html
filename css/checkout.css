@@ -7,6 +7,13 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  border-right: 1px solid #dee1e5;
+  margin-right: 50px;
+  padding-right: 50px;
+}
+.checkout {
+  width: 1200px;
+  margin: 0 auto;
 }
 .checkout-item {
   padding: 12px 3px 12px 12px;
@@ -30,6 +37,32 @@
 .checkout-item .cart-card .item-info {
   margin-left: 14px;
   padding-left: 26px;
+}
+.info-checkout {
+  width: 320px;
+}
+.info-checkout .custom-pills {
+  margin: 0;
+}
+.info-step .title-info-step {
+  color: #0d6efd;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 32px 0;
+}
+.info-step .card {
+  padding: 13px;
+}
+.info-step .card p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+.info-step .title-card-info-step {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin: 12px 0;
 }
 
 /*
